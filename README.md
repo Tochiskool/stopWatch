@@ -9,3 +9,7 @@
   - 1 Get all the buttons.
   - 2 Loop through them and set a color on click on all the buttons
   - 3 Get individual buttons and onclick change the colors of the others back to nromal.
+
+## setup start stop watch
+
+- Onclick of the stop/start button the timer should start from seconds then minutes then hours basicly increment the timer and on click again stop the timer

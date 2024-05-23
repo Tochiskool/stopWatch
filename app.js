@@ -5,6 +5,7 @@ var timeInterval;
 var counter = 0;
 var recordTime;
 var seconds = 0;
+var currentTime;
 // Get all elements
 const btn = document.querySelectorAll("button");
 console.log(btn);
@@ -24,14 +25,15 @@ btn[0].onclick = function () {
   btn[1].style.color = "white";
   btn[2].style.color = "white";
   timer = document.querySelector("#timer");
-  console.log(timer.innerHTML);
+
   timeInterval = setInterval(() => {
     seconds++;
     if (seconds === 100) {
       counter++;
       seconds = 0;
     }
-    timer.innerHTML = counter + ":" + seconds;
+    currentTime = counter + ":" + seconds;
+    timer.innerHTML = currentTime;
     if (seconds > 0) {
       btn[0].textContent = "Stop";
       btn[0].addEventListener("click", function () {

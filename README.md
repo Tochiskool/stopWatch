@@ -1,5 +1,7 @@
 # Understanding the creation of the stop watch using pseudoCode:
 
+[Link to page](https://tochiskool.github.io/stopwatch/)
+
 ## style
 
 - set elements at 50% of the viewport and center the elements.
@@ -13,3 +15,12 @@
 ## setup start stop watch
 
 - Onclick of the stop/start button the timer should start from seconds then minutes then hours basicly increment the timer and on click again stop the timer
+
+- Set a reset button that clears all the recorded time and start/stop button
+
+- Set record time Button and a playground for the recorded time to be registered.
+
+* use keys `S to start`, `R to reset` and `T to record`.
+
+`Plain Vanilla JS 
+`

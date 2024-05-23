@@ -16,6 +16,7 @@ for (let i = 0; i < btn.length; i++) {
   //on click add color
   btnNow.addEventListener("click", function () {
     btnNow.style.color = "black";
+    btnNow.style.backgroundColor = "white";
   });
 }
 //Get individual buttons
@@ -39,6 +40,8 @@ btn[0].onclick = function () {
       btn[0].onclick = function () {
         btn[1].style.color = "white";
         btn[2].style.color = "white";
+        btn[1].style.backgroundColor = "black";
+        btn[2].style.backgroundColor = "black";
         clearInterval(timeInterval);
       };
     }
@@ -55,6 +58,9 @@ btn[2].onclick = function () {
   console.log("You clicked record Time");
   btn[0].style.color = "white";
   btn[1].style.color = "white";
+  btn[0].style.backgroundColor = "black";
+  btn[1].style.backgroundColor = "black";
+
   recordTime = document.querySelector("#recordTime");
   var li = document.createElement("li");
   li.innerHTML = counter + ":" + seconds;
